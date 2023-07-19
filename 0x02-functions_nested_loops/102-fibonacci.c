@@ -13,7 +13,7 @@ int main(void)
 
 	printf("%lu, ", term1);
 
-	for (i = 0 ; i < 50 ; i++)
+	for (i = 1 ; i < 50 ; i++)
 	{
 		printf("%lu", term2);
 		next = term1 + term2;
