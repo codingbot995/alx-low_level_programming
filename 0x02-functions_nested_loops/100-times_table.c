@@ -1,20 +1,47 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
- * function_name - Short description of what the function does.
- *
- * Return: Description of the return value (if applicable).
+ * print_times_table - prints the n times table, starting with 0
+ * @n: number of the times table
  */
-
-int main(void)
+void print_times_table(int n)
 {
-	int sum =0;
-	int i;
+	int i, j, k;
 
-	for (i = 0 ; i < 1024 ; i++)
+	if (n >= 0 && n <= 15)
 	{
-		if (i % 3 == 0 || i % 5 == 0)
-			sum = sum + i;
+		for (i = 0; i <= n; i++)
+		{
+			for (j = 0; j <= n; j++)
+			{
+				k = j * i;
+				if (j == 0)
+				{
+					_putchar(k + '0');
+				} else if (k < 10 && j != 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(k + '0');
+				} else if (k >= 10 && k < 100)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar((k / 10) + '0');
+					_putchar((k % 10) + '0');
+				} else if (k >= 100)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar((k / 100) + '0');
+					_putchar(((k / 10) % 10) + '0');
+					_putchar((k % 10) + '0');
+				}
+			}
+			_putchar('\n');
+		}
 	}
-	printf("%d\n", sum);
-	return (0);
 }
