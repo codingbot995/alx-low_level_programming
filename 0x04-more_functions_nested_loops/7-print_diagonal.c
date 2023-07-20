@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_diagonal - print slash
- * @n: print '\' in diadonal form
- * Return:void
+ * print_diagonal - print diagonal using the '\' character
+ * @n: number of times the '\' should be printed
+ * Return: void
  */
 
 void print_diagonal(int n)
