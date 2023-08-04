@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  * main - prints the programme name
- * @agrc:is the  agrument count
- * @agrv: the argument vector
+ * @argc:is the  agrument count
+ * @argv: the argument vector
  * Return:0
  */
 
