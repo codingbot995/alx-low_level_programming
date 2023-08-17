@@ -8,9 +8,9 @@
 
 void swap_int(int *a, int *b)
 {
-	int c;
+	int c;//this was the initial 
 
-	c = *a;
-	*a = *b;
-	*b = c;
+	c = *a;//we swap to a
+	*a = *b;//for a we swap it to be
+	*b = c;//so a has b value and b has a value which is c we interchange them
 }

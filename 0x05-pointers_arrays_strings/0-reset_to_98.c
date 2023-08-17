@@ -7,5 +7,5 @@
 
 void reset_to_98(int *n)
 {
-	*n = 98;
+	*n = 98;//the asterick is used to change the value of n
 }
