@@ -5,12 +5,11 @@
  * @n:element to add at the beginning
  * Return:elements in the node
  */
- 
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *new_node = malloc(sizeof(listint_t));
 
-	if(new_node == NULL)
+	if (new_node == NULL)
 	{
 		return (NULL);
 	}
