@@ -3,7 +3,8 @@
  * flip_bits - returns the number of bits you would need to flip
  * @n: first num
  * @m: second num
- * Return : flipped nums
+ *
+ * Return: The number of bits that are different between n and m.
  */
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
