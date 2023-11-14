@@ -1,4 +1,8 @@
 #!/bin/bash
-gcc -wall -wextra -werror -pedantic -c -fPIC *.c
+gcc -c -Wall -Werror -fPIC *.c
+
+# Create the dynamic library
 gcc -shared -o liball.so *.o
-export LD_LIBRAY_PATH=.:$LD_LIBRAY_PATH
+
+# Clean up intermediate object file
+rm *.o
