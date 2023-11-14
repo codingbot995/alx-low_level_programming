@@ -3,7 +3,6 @@
 /**
  * @brief Adds two numbers.
  *
- * This function takes two numbers as input and returns their sum.
  *
  * @param a The first number.
  * @param b The second number.
@@ -17,9 +16,6 @@ int sum(int a, int b)
 /**
  * @brief Subtracts two numbers.
  *
- * This function takes two numbers as input and returns their difference.
- *
- * @param a The first number.
  * @param b The second number.
  * @return The difference of the two numbers.
  */
@@ -31,7 +27,6 @@ int sub(int a, int b)
 /**
  * @brief Computes the remainder of the division of two numbers.
  *
- * This function takes two numbers as input and returns the remainder of their division.
  *
  * @param a The dividend.
  * @param b The divisor.
@@ -39,13 +34,17 @@ int sub(int a, int b)
  */
 int mod(int a, int b)
 {
-    return (a % b);
+   if (b == 0)
+   {
+   	printf("Error:Division by zero\n");
+	return 0;
+   }
+   return (a % b);
 }
 
 /**
  * @brief Divides two numbers.
  *
- * This function takes two numbers as input and returns the result of their division.
  *
  * @param a The dividend.
  * @param b The divisor (should not be zero).
@@ -53,13 +52,17 @@ int mod(int a, int b)
  */
 int div(int a, int b)
 {
+    if (b == 0)
+    {
+    	printf("Error:Division by zero\n");
+	return 0;
+    }
     return (a / b);
 }
 
 /**
  * @brief Multiplies two numbers.
  *
- * This function takes two numbers as input and returns their product.
  *
  * @param a The first number.
  * @param b The second number.
@@ -69,9 +72,3 @@ int mul(int a, int b)
 {
     return (a * b);
 }
-
-int main() {
-    // Your program logic or testing can go here
-    return 0;
-}
-
